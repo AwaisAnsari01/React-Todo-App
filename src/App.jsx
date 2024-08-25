@@ -29,13 +29,12 @@ const App = () => {
   }
   return (
     <>
-    <h1 className="text-center">Todo App</h1>
+    <h1>Todo App</h1>
     <form onSubmit={addTodo}>
       <input type="text" placeholder="enter todo" ref={todoVal} />
       <button type="submit">click</button>
     </form>
     <ul>
-      {/* key ma index dena is not a good practice */}
       {todo.map((item , index)=>{
         return <div key={index}>
           <li >{item}</li>
